@@ -217,7 +217,7 @@ def build_master_client_index(df, starting_id = 1, score_function = None, high_t
 # Main script
 # ---------------------------
 if __name__== "__main__":
-    df = pd.read_csv("demographics_data.csv")
+    df = pd.read_csv("client_data/demographics_data.csv")
 
     df = df.sample(n = 500, random_state = 42).reset_index(drop = True)
 
